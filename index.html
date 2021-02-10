@@ -4,24 +4,33 @@
 	<link  rel="stylesheet" type="text/css" href="meteo.css"/>
 		<meta charset="UTF-8"/>
 		<title> Météo France </title>
+		<script language="JavaScript" type="text/javascript"src="select.js"> </script>
 	</head>
 
 	<body>
-
-		<h1 style= "background-color: black; color: white; text-align: center">TP Météo HTML</h1>
+	
+	<h1 style= "background-color: black; color: white; text-align: center">TP Météo HTML</h1>
 		
-	<div class="box">
-		<div class="one"> <h2> Paris</h2>
+    <label for="ville-select"> Choisir une ville: </label>
++   	<select id="ville-select" onchange=showCity()> 
++   	<option value=""> --choisissez une ville-- </option>
++   	<option value="Paris">Paris</option>
++   	<option value="Lyon">Lyon</option>
++   	<option value="Marseille">Marseille</option>
++   	</select>
+		
+<div class="flex">
+		<div  class="city" id="Paris"> <h2> Paris</h2>
 		<img src= "https://static.thenounproject.com/png/653374-200.png" alt= "noun_Sprinkle Cloud" width="40">
 		<p> 2°, pluvieux</p>
 	</div> 
 		
-		<div class="two"> <h2>Lyon</h2>
+		<div class="city" id="Lyon"> <h2>Lyon</h2>
 		<img src= "https://static.thenounproject.com/png/653386-200.png" alt= "noun_lightning cloud" width="40">
 		<p>5°, orageux</p>
 	  </div>
 
-		<div class="three"> <h2>Marseille</h2>
+		<div class="city" id="Marseille"> <h2>Marseille</h2>
 		<img src= "https://static.thenounproject.com/png/659475-200.png" alt= "noun_sun" width="40">
 		<p>10°, Ensoleillé</p>
 		</div>
