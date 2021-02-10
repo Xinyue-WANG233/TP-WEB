@@ -4,9 +4,9 @@
 
   		for (i=0; i<l; i++) {
   		if (cities[i].id == nomVilleSelectionnee) {
-      // garder l'element visible -> ELEMENT.style.display= "none";
+                ELEMENT.style.display= "none";
    		 } else {
-      // cacher l'element -> ELEMENT.style.display= "";
+                ELEMENT.style.display= "";
   		  }
   		}
 	}
