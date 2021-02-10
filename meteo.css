@@ -2,29 +2,17 @@ body {
   font-family: sans-serif;
 }
 
-.box{
+.flex{
   display: flex;
+  justify-content: space-evenly;
+  
 }
 
-.one {
-  flex: 1 1 auto;
+.flex div {
   background-color: #999999;
+  width:150px;
   text-align: center;
-  border: 10px solid;
-  border-color: white;
-}
-.two {
-  flex: 1 1 auto;
-  background-color: #999999;
-  text-align: center;
-  border: 10px solid;
-  border-color: white;
-}
-.three {
-  flex: 1 1 auto;
-  background-color: #999999;
-  text-align: center;
-  border: 10px solid;
+  border: 15px solid;
   border-color: white;
 }
 
