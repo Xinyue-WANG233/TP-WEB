@@ -1,12 +1,12 @@
 		function showCity() { 
-  		var nomVilleSelectionnee = document.getElementById("ville-select").value;
-	        var cities = document.getElementsByClassName("city");
+  		let nomVilleSelectionnee = document.getElementById("ville-select").value;
+	      let cities = document.getElementsByClassName("city");
 
-  		for (i=0; i<l; i++) {
+  		for (i=0; i<3; i++) {
   		if (cities[i].id == nomVilleSelectionnee) {
-                ELEMENT.style.display= "none";
+         cities[i].style.display= "inline";
    		 } else {
-                ELEMENT.style.display= "";
+         cities[i].style.display= "none";
   		  }
   		}
 	}
