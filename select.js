@@ -1,4 +1,3 @@
-	<script> 
 		function showCity() { 
   		let nomVilleSelectionnee = document.getElementById("ville-select").value;
 	    let cities = document.getElementsByClassName("city");
@@ -12,4 +11,3 @@
   		}
 	}
 						
-		</script>
